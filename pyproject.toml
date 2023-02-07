@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "quantpy"
+version = "0.1.0"
+description = ""
+authors = ["nordmtr <nordmtr@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.10"
+numpy = "^1.22.4"
+scipy = "^1.8.1"
+pandas = "^1.4.2"
+tqdm = "^4.64.0"
+matplotlib = "^3.5.2"
+einops = "^0.4.1"
+cvxopt = "^1.3.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+pytest = "^7.1.2"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+isort = "^5.10.1"
+pre-commit = "^2.19.0"
+jupyter-contrib-nbextensions = "^0.5.1"
+autoflake = "^1.4"
+joblib = "^1.2.0"
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.venv
+  | build
+  | dist
+  | notebooks
+  | submodules
+  )/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths = ["quantpy"]
+skip = "submodules"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
