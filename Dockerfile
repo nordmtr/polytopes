@@ -14,7 +14,7 @@ ENV PATH="$POETRY_HOME/bin:$PATH"
 # Install poetry
 RUN curl -sSL https://install.python-poetry.org | POETRY_VERSION=$POETRY_VERSION python3 -
 
-WORKDIR /quantpy
+WORKDIR /polytopes
 COPY pyproject.toml poetry.lock  ./
 
 # Install dependencies and package
