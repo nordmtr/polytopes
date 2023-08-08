@@ -1,4 +1,4 @@
-# QuantPy
+# Polytopes
 
 A framework for quantum computations and quantum tomography simulations. Supports basic mathematical operations on quantum states, as well as partial traces and tensor products, measurements, quantum channels (aka CPTP maps), gates, quantum state tomography and calculating confidence intervals for the experiments.
 
@@ -6,8 +6,8 @@ A framework for quantum computations and quantum tomography simulations. Support
 
 To install the package you need to clone this repository to your computer and install it using poetry.
 ```bash
-git clone https://github.com/nordmtr/quantpy.git
-cd quantpy
+git clone https://github.com/nordmtr/polytopes.git
+cd polytopes
 poetry install
 ```
 
