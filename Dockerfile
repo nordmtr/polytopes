@@ -18,8 +18,8 @@ WORKDIR /quantpy
 COPY pyproject.toml poetry.lock  ./
 
 # Install dependencies and package
-RUN mkdir quantpy && \
-    touch quantpy/__init__.py && \
+RUN mkdir polytopes && \
+    touch polytopes/__init__.py && \
     poetry config virtualenvs.create false && \
     poetry config installer.parallel true && \
     poetry install --no-interaction --no-ansi
